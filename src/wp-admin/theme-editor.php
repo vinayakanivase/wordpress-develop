@@ -149,6 +149,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 
 update_recently_edited( $file );
 
+$error = false;
 if ( ! is_file( $file ) ) {
 	$error = true;
 }
